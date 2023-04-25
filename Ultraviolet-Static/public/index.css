@@ -1,0 +1,106 @@
+body {
+  background: rgb(5,5,5);
+  background: -moz-linear-gradient(90deg, rgba(5,5,5,1) 0%, rgba(127,27,193,1) 100%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(5,5,5,1) 0%, rgba(127,27,193,1) 100%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgba(5,5,5,1) 0%, rgba(127,27,193,1) 100%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050505",endColorstr="#00d4ff",GradientType=1);
+}
+
+
+
+/* CSS for the form */
+#uv-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 300px;
+  
+  
+}
+h1 {
+  color: azure;
+}
+#uv-address {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1d1d1f;
+  color: #fff;
+  width: 300px;
+  transition: all 0.2s ease-in-out;
+}
+
+#ad {
+  color: azure;
+}
+
+#uv-address:focus {
+  outline: none;
+  box-shadow: 0 0 10px #5d5dff;
+}
+
+/* Animation effects for the form */
+#uv-form {
+  animation: form-bounce 0.5s ease-in-out;
+}
+
+@keyframes form-bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#uv-address {
+  animation: input-bounce 0.5s ease-in-out;
+}
+
+@keyframes input-bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  height: 50px;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #f00;
+}
